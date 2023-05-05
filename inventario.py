@@ -12,5 +12,5 @@ st.title("INVENTARIO")
 df = read_excel()
 edited_df = st.experimental_data_editor(df,num_rows="dynamic")
 
-with st.button("SAVE"):
+with st.button("SAVE") as b:
     edited_df.to_excel("db/Invetario.xlsx")
