@@ -9,4 +9,4 @@ def read_excel(name = "db/Invetario.xlsx"):
 st.title("INVENTARIO")
 
 df = read_excel()
-edited_df = st.st.experimental_data_editor(df)
+edited_df = st.experimental_data_editor(df)
