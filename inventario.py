@@ -7,7 +7,6 @@ def read_excel(name = "db/Invetario.xlsx"):
 
 
 st.title("INVENTARIO")
-st.write("INVENTARIO")
 
 df = read_excel()
-st.dataframe(df)
+edited_df = st.st.experimental_data_editor(df)
