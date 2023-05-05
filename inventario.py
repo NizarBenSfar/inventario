@@ -10,7 +10,7 @@ def read_excel(name = "db/Invetario.xlsx"):
 st.title("INVENTARIO")
 
 df = read_excel()
-edited_df = st.experimental_data_editor(df,num_rows="dynamic")
+edited_df = st.experimental_data_editor(df,num_rows="dynamic",use_container_width=True)
 
 if st.button("SAVE"):
     edited_df.to_excel("db/Invetario.xlsx")
